@@ -1,0 +1,63 @@
+.u_no_text_decoration {
+  text-decoration: none !important;
+}
+
+.u_text_white {
+  color: $color-grey-light-1 !important;
+}
+
+.u_fix_margin_right {
+  margin-right: -3rem;
+}
+
+.u_translate_Y {
+  transform: translateY(3rem);
+}
+
+.u_margin_top_small {
+  margin-top: calc(10%);
+}
+.u_margin_top_medium {
+  margin-top: calc(15%);
+}
+.u_margin_top_big {
+  margin-top: calc(25%);
+}
+
+.u_letter_spacing_small {
+  line-height: 3.5rem;
+}
+
+.u_text_color_redrose {
+  color: rgb(195, 25, 82) !important;
+}
+
+.u_text_color_yellow {
+  color: $color-yellow-light;
+}
+
+.u_text_color_green_pipe {
+  color: $color-green-dark;
+}
+
+.u_text_color_grey_light_3 {
+  color: $color-grey-light-3;
+}
+
+.u_text_color_red_dark {
+  color: $color-red-dark;
+}
+
+.u_text_color_pink {
+  color: $color-pink;
+}
+
+.u_position_absolute {
+  position: absolute;
+}
+
+.u_center_position {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

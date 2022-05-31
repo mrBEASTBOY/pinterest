@@ -1,0 +1,70 @@
+.new {
+  width: inherit;
+  height: inherit;
+  display: flex;
+
+  &__image {
+    width: 50%;
+    background-image: url("../../img/big-bg.png");
+    background-size: cover;
+    position: relative;
+
+    &-container {
+      position: absolute;
+      top: 67%;
+      left: 22%;
+      transform: translate(-50%, -50%);
+    }
+
+    &--medium {
+      background-image: url("../../img/medium-bg.png");
+      background-size: cover;
+      width: 21rem;
+      height: 38rem;
+      border-radius: 2rem;
+      position: relative;
+    }
+
+    &--small {
+      background-image: url("../../img/small-bg.png");
+      background-size: cover;
+      width: 9.8rem;
+      height: 9.8rem;
+      position: absolute;
+      top: 100%;
+      left: 0%;
+      transform: translate(-50%, -50%);
+    }
+
+    &-text {
+      font-size: 1.6rem;
+      color: $color-white;
+      font-weight: 700;
+      text-align: left;
+      padding-left: 6rem;
+    }
+
+    &-subscription {
+      display: block;
+      margin-top: -0.5rem;
+      font-weight: 300;
+    }
+  }
+
+  &__text-box {
+    width: 50%;
+    padding: 35rem 17rem 0 24rem;
+
+    &-content {
+      text-align: center;
+      padding: 1rem 5rem;
+    }
+
+    &-title {
+      padding: 1rem 3rem;
+    }
+  }
+  &__button {
+    text-align: center;
+  }
+}

@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>Pinterest</title>
+  </head>
+  <body>
+    <div class="container">
+      
+  
+      <header class="header">
+        <nav class="nav-desktop">
+          <div class="nav-desktop__container">
+            <div class="nav-desktop__block">
+              <div class="nav-desktop__logo">
+                <div class="nav-desktop__block-item--left">
+                  <svg
+                    height="32"
+                    width="32"
+                    viewBox="0 0 24 24"
+                    aria-label="Pinterest"
+                    role="img"
+                  >
+                    <path
+                      d="M0 12c0 5.123 3.211 9.497 7.73 11.218-.11-.937-.227-2.482.025-3.566.217-.932 1.401-5.938 1.401-5.938s-.357-.715-.357-1.774c0-1.66.962-2.9 2.161-2.9 1.02 0 1.512.765 1.512 1.682 0 1.025-.653 2.557-.99 3.978-.281 1.189.597 2.159 1.769 2.159 2.123 0 3.756-2.239 3.756-5.471 0-2.861-2.056-4.86-4.991-4.86-3.398 0-5.393 2.549-5.393 5.184 0 1.027.395 2.127.889 2.726a.36.36 0 0 1 .083.343c-.091.378-.293 1.189-.332 1.355-.053.218-.173.265-.4.159-1.492-.694-2.424-2.875-2.424-4.627 0-3.769 2.737-7.229 7.892-7.229 4.144 0 7.365 2.953 7.365 6.899 0 4.117-2.595 7.431-6.199 7.431-1.211 0-2.348-.63-2.738-1.373 0 0-.599 2.282-.744 2.84-.282 1.084-1.064 2.456-1.549 3.235C9.584 23.815 10.77 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="nav-desktop__block-item--left">
+                  <h1 class="nav-desktop__logo-name">Pinterest</h1>
+                </div>
+              </div>
+            </div>
+            <div class="nav-desktop__block">
+              <div>
+                <a href="#" class="nav-desktop__block-item--right"> About </a>
+              </div>
+              <div class="nav-desktop__block-item">
+                <a href="#" class="nav-desktop__block-item--right">
+                  Business
+                </a>
+              </div>
+              <div class="nav-desktop__block-item">
+                <a href="#" class="nav-desktop__block-item--right"> Blog </a>
+              </div>
+              <div class="nav-desktop__block-item u_fix_margin_right btn">
+                <a
+                  href="#"
+                  class="nav-desktop__block-item--right btn__container btn--red u_no_text_decoration u_text_white"
+                >
+                  Log in
+                </a>
+              </div>
+              <div class="nav-desktop__block-item btn">
+                <a
+                  href="#"
+                  class="nav-desktop__block-item--right btn__container btn--grey u_no_text_decoration"
+                >
+                  Sign up
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="header__text-box">
+          <h1 class="heading-primary">Get your next</h1>
+          <div class="header__check-box-content">
+            <h2
+              class="myContents heading-primary u_translate_Y animation__moveUp heading-primary--1"
+            >
+            weeknight dinner idea
+            </h2>
+            <h2
+              class="myContents heading-primary u_translate_Y animation__moveUp heading-primary--2"
+            >
+            home decor idea
+            </h2>
+            <h2
+              class="myContents heading-primary u_translate_Y animation__moveUp heading-primary--3"
+            >
+            new look outfit
+            </h2>
+            <h2
+              class="myContents heading-primary u_translate_Y animation__moveUp heading-primary--4"
+            >
+            green thumb idea
+            </h2>
+          </div>
+  
+          <div class="header__check-box">
+            <div class="header__radio-group">
+              <input
+                class="header__radio"
+                type="radio"
+                id="dinner"
+                name="mySlide"
+                value="Dinner"
+                onClick="currentContent(0)"
+              />
+  
+              <label for="dinner" class="header__radio-label">
+                <span class="header__radio-button header__radio--yellow" ></span>
+                &nbsp;
+              </label>
+            </div>
+  
+            <div class="header__radio-group">
+              <input
+                class="header__radio"
+                type="radio"
+                id="home"
+                name="mySlide"
+                value="Home"
+                onClick="currentContent(1)"
+              />
+  
+              <label for="home" class="header__radio-label">
+                <span
+                  class="header__radio-button header__radio--light-green"
+                ></span>
+                &nbsp;
+              </label>
+            </div>
+  
+            <div class="header__radio-group">
+              <input
+                class="header__radio"
+                type="radio"
+                id="clothes"
+                name="mySlide"
+                value="Clothes"
+                onClick="currentContent(2)"
+              />
+  
+              <label for="clothes" class="header__radio-label">
+                <span class="header__radio-button header__radio--blue"></span>
+                &nbsp;
+              </label>
+            </div>
+  
+            <div class="header__radio-group">
+              <input
+                class="header__radio"
+                type="radio"
+                id="tree"
+                name="mySlide"
+                value="Tree"
+                onClick="currentContent(3)"
+              />
+  
+              <label for="tree" class="header__radio-label">
+                <span
+                  class="header__radio-button header__radio--dark-green"
+                ></span>
+                &nbsp;
+              </label>
+            </div>
+          </div>
+        </div>
+  
+        <div class="header__image-box">
+          <div class="header__image-box-list">
+            <div class="header__image-box-flex">
+              <div class="header__image-box-container animation__displayFirst">
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-1.jpg)"
+                ></div>
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-2.png)"
+                ></div>
+              </div>
+              <div
+                class="header__image-box-container u_margin_top_small animation__displaySecond"
+              >
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-3.jpg)"
+                ></div>
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-4.png)"
+                ></div>
+              </div>
+              <div
+                class="header__image-box-container u_margin_top_medium animation__displayThird"
+              >
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-5.jpg)"
+                ></div>
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-6.png)"
+                ></div>
+              </div>
+              <div
+                class="header__image-box-container u_margin_top_big animation__displayFour"
+              >
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-7.jpg)"
+                ></div>
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-8.jpg)"
+                ></div>
+              </div>
+              <div
+                class="animation__displayFive header__image-box-container u_margin_top_medium"
+              >
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-9.jpg)"
+                ></div>
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-10.jpg)"
+                ></div>
+              </div>
+              <div
+                class="animation__displaySix header__image-box-container u_margin_top_small"
+              >
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-11.jpg)"
+                ></div>
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-12.jpg)"
+                ></div>
+              </div>
+              <div class="animation__displaySeven header__image-box-container">
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-13.jpg)"
+                ></div>
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-14.jpg)"
+                ></div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="header__image-box-list">
+            <div class="header__image-box-flex">
+              <div class="header__image-box-container animation__displayFirst">
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-1.jpg)"
+                ></div>
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-2.png)"
+                ></div>
+              </div>
+              <div
+                class="header__image-box-container u_margin_top_small animation__displaySecond"
+              >
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-3.jpg)"
+                ></div>
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-4.png)"
+                ></div>
+              </div>
+              <div
+                class="header__image-box-container u_margin_top_medium animation__displayThird"
+              >
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-5.jpg)"
+                ></div>
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-6.png)"
+                ></div>
+              </div>
+              <div
+                class="header__image-box-container u_margin_top_big animation__displayFour"
+              >
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-7.jpg)"
+                ></div>
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-8.jpg)"
+                ></div>
+              </div>
+              <div
+                class="animation__displayFive header__image-box-container u_margin_top_medium"
+              >
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-9.jpg)"
+                ></div>
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-10.jpg)"
+                ></div>
+              </div>
+              <div
+                class="animation__displaySix header__image-box-container u_margin_top_small"
+              >
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-11.jpg)"
+                ></div>
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-12.jpg)"
+                ></div>
+              </div>
+              <div class="animation__displaySeven header__image-box-container">
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-13.jpg)"
+                ></div>
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-14.jpg)"
+                ></div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="header__image-box-list">
+            <div class="header__image-box-flex">
+              <div class="header__image-box-container animation__displayFirst">
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-1.jpg)"
+                ></div>
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-2.png)"
+                ></div>
+              </div>
+              <div
+                class="header__image-box-container u_margin_top_small animation__displaySecond"
+              >
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-3.jpg)"
+                ></div>
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-4.png)"
+                ></div>
+              </div>
+              <div
+                class="header__image-box-container u_margin_top_medium animation__displayThird"
+              >
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-5.jpg)"
+                ></div>
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-6.png)"
+                ></div>
+              </div>
+              <div
+                class="header__image-box-container u_margin_top_big animation__displayFour"
+              >
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-7.jpg)"
+                ></div>
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-8.jpg)"
+                ></div>
+              </div>
+              <div
+                class="animation__displayFive header__image-box-container u_margin_top_medium"
+              >
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-9.jpg)"
+                ></div>
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-10.jpg)"
+                ></div>
+              </div>
+              <div
+                class="animation__displaySix header__image-box-container u_margin_top_small"
+              >
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-11.jpg)"
+                ></div>
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-12.jpg)"
+                ></div>
+              </div>
+              <div class="animation__displaySeven header__image-box-container">
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-13.jpg)"
+                ></div>
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-14.jpg)"
+                ></div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="header__image-box-list">
+            <div class="header__image-box-flex">
+              <div class="header__image-box-container animation__displayFirst">
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-1.jpg)"
+                ></div>
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-2.png)"
+                ></div>
+              </div>
+              <div
+                class="header__image-box-container u_margin_top_small animation__displaySecond"
+              >
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-3.jpg)"
+                ></div>
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-4.png)"
+                ></div>
+              </div>
+              <div
+                class="header__image-box-container u_margin_top_medium animation__displayThird"
+              >
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-5.jpg)"
+                ></div>
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-6.png)"
+                ></div>
+              </div>
+              <div
+                class="header__image-box-container u_margin_top_big animation__displayFour"
+              >
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-7.jpg)"
+                ></div>
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-8.jpg)"
+                ></div>
+              </div>
+              <div
+                class="animation__displayFive header__image-box-container u_margin_top_medium"
+              >
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-9.jpg)"
+                ></div>
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-10.jpg)"
+                ></div>
+              </div>
+              <div
+                class="animation__displaySix header__image-box-container u_margin_top_small"
+              >
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-11.jpg)"
+                ></div>
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-12.jpg)"
+                ></div>
+              </div>
+              <div class="animation__displaySeven header__image-box-container">
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-13.jpg)"
+                ></div>
+                <div
+                  class="header__image-box-item"
+                  style="background-image: url(img/dinner-14.jpg)"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="float-btn" id="flot">
+          <svg
+            height="20"
+            width="20"
+            viewBox="0 0 24 24"
+            aria-label="Cuộn xuống"
+            role="img"
+          >
+            <path
+              d="M12 19.5.66 8.29c-.88-.86-.88-2.27 0-3.14.88-.87 2.3-.87 3.18 0L12 13.21l8.16-8.06c.88-.87 2.3-.87 3.18 0 .88.87.88 2.28 0 3.14L12 19.5z"
+            ></path>
+          </svg>
+        </div>
+  
+        <div class="header__activity">
+          <div class="header__activity-blur"></div>
+          <div class="header__activity-content">
+            Đây là cách thức hoạt động<span>
+              <svg
+                height="12"
+                width="12"
+                viewBox="0 0 24 24"
+                aria-label="arrow down icon"
+                role="img"
+              >
+                <path
+                  d="M12 19.5.66 8.29c-.88-.86-.88-2.27 0-3.14.88-.87 2.3-.87 3.18 0L12 13.21l8.16-8.06c.88-.87 2.3-.87 3.18 0 .88.87.88 2.28 0 3.14L12 19.5z"
+                ></path>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </header>
+  
+      <section class="section-work">
+        <div class="work">
+          <div class="work__list-image">
+            <div class="work__container work__container--1">
+              <img class="work__image" src="img/LC_BEHIND.png" alt="container" />
+            </div>
+            <div class="work__container work__container--2">
+              <img class="work__image" src="img/RB_BEHIND.png" alt="container" />
+            </div>
+            <div class="work__container work__container--3">
+              <img class="work__image" src="img/TR_BEHIND.png" alt="container" />
+            </div>
+            <div class="work__container work__container--4">
+              <img class="work__image" src="img/CENTER.png" alt="container" />
+            </div>
+            <div class="work__search">
+              <svg
+                height="24"
+                width="24"
+                viewBox="0 0 24 24"
+                aria-label="search"
+                role="img"
+              >
+                <path
+                  d="M10 16c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6m13.12 2.88-4.26-4.26A9.842 9.842 0 0 0 20 10c0-5.52-4.48-10-10-10S0 4.48 0 10s4.48 10 10 10c1.67 0 3.24-.41 4.62-1.14l4.26 4.26a3 3 0 0 0 4.24 0 3 3 0 0 0 0-4.24"
+                ></path>
+              </svg>
+              <h2 class="heading-secondary work__search-title">
+                easy chickend dinner
+              </h2>
+            </div>
+          </div>
+          <div class="work__text-box">
+            <h1 class="heading-primary u_text_color_redrose">
+              Search for an idea
+            </h1>
+            <div class="work__text-box-content">
+              <p
+                class="work__text-box-body heading-secondary u_text_color_redrose"
+              >
+                What do you want to try next? Think of something you’re into—like
+                “easy chicken dinner”—and see what you find.
+              </p>
+            </div>
+            <div class="btn work__button">
+              <a
+                href="#"
+                class="btn__container btn--rose u_text_color_yellow u_no_text_decoration"
+              >
+                Explore
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section class="section-collect">
+        <div class="collect">
+          <div class="collect__text-box">
+            <h1 class="heading-primary u_text_color_green_pipe">
+              Save ideas you like
+            </h1>
+            <div class="collect__text-box-content">
+              <p
+                class="collect__text-box-body heading-secondary u_text_color_green_pipe"
+              >
+                Collect your favorites so you can get back to them later.
+              </p>
+            </div>
+            <div class="btn collect__button">
+              <a
+                href="#"
+                class="btn__container btn--pipe u_text_color_grey_light_3 u_no_text_decoration"
+              >
+                Explore
+              </a>
+            </div>
+          </div>
+          <div class="collect__list-image">
+            <div class="collect__bg collect__bg--1">
+              <div class="collect__container collect__container--1">
+                <div class="collect__container-title">
+                  <h1 class="heading-primary">Fern future home vibes</h1>
+                </div>
+                <div class="collect__container-list-bg">
+                  <div
+                    class="collect__container-single-bg collect__container-single-bg--1"
+                  ></div>
+                  <div
+                    class="collect__container-single-bg collect__container-single-bg--2"
+                  ></div>
+                  <div
+                    class="collect__container-single-bg collect__container-single-bg--3"
+                  ></div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="collect__bg collect__bg--2">
+              <div class="collect__container collect__container--2 u_letter_spacing_small">
+                <h1 class="heading-tertiary">
+                  My Scandinavian bedroom
+                </p>
+              </div>
+            </div>
+  
+            <div class="collect__bg collect__bg--3">
+              <div class="collect__container collect__container--3 u_letter_spacing_small">
+                <h1 class="heading-fourth">
+                  The deck of my dreams
+                </h1>
+              </div>
+            </div>
+  
+            <div class="collect__bg collect__bg--4">
+              <div class="collect__container collect__container--4 u_letter_spacing_small">
+                <h1 class="heading-tertiary">
+                  Serve my drinks in style
+                </h1>
+              </div>
+            </div>
+  
+            <div class="collect__bg collect__bg--5">
+              <div class="collect__container collect__container--5 u_letter_spacing_small">
+                <h1 class="heading-tertiary">
+                  Our bathroom upgrade
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section class="section-new">
+        <div class="new">
+          <div class="new__image">
+            <div class="new__image-container">
+              <div class="new__image--medium">
+                <div class="new__image--small"></div>
+              </div>
+              <div class="new__image-text">
+                Scout the City <span class="new__image-subscription">56.7k followers</span>
+              </div>
+            </div>
+          </div>
+          <div class="new__text-box">
+            <h1 class="heading-primary u_text_color_red_dark new__text-box-title">
+              See it, make it, try it, do it
+            </h1>
+            <div class="new__text-box-content">
+              <p
+                class="new__text-box-body heading-secondary u_text_color_red_dark"
+              >
+              The best part of Pinterest is discovering new things and ideas from people around the world.
+              </p>
+            </div>
+            <div class="btn new__button">
+              <a
+                href="#"
+                class="btn__container btn--red-dark u_text_color_pink u_no_text_decoration"
+              >
+                Explore
+              </a>
+            </div>
+          </div>
+  
+        </div>
+      </section>
+  
+      <section class="section-signup">
+        <div class="signup__list-image">
+          <div class="signup__list-image--1 signup__list-image-common">
+            <div class="signup__list-image-container">
+              <div class="signup__list-image-bg signup__list-image-bg--1"></div>
+            </div>
+            <div class="signup__list-image-container">
+              <div class="signup__list-image-bg signup__list-image-bg--2"></div>
+            </div>
+            <div class="signup__list-image-container">
+              <div class="signup__list-image-bg signup__list-image-bg--3"></div>
+            </div>
+          </div>
+          <div class="signup__list-image--2 signup__list-image-common">
+            <div class="signup__list-image-container">
+              <div
+                class="signup__list-image-bg signup__list-image-bg--outer signup__list-image-bg--4"
+              ></div>
+            </div>
+            <div class="signup__list-image-container">
+              <div
+                class="signup__list-image-bg signup__list-image-bg--outer signup__list-image-bg--5"
+              ></div>
+            </div>
+            <div class="signup__list-image-container">
+              <div
+                class="signup__list-image-bg signup__list-image-bg--outer signup__list-image-bg--6"
+              ></div>
+            </div>
+          </div>
+          <div class="signup__list-image--3 signup__list-image-common">
+            <div class="signup__list-image-container">
+              <div
+                class="signup__list-image-bg signup__list-image-bg--out signup__list-image-bg--7"
+              ></div>
+            </div>
+            <div class="signup__list-image-container">
+              <div
+                class="signup__list-image-bg signup__list-image-bg--out signup__list-image-bg--8"
+              ></div>
+            </div>
+            <div class="signup__list-image-container">
+              <div
+                class="signup__list-image-bg signup__list-image-bg--out signup__list-image-bg--9"
+              ></div>
+            </div>
+            <div class="signup__list-image-container">
+              <div
+                class="signup__list-image-bg signup__list-image-bg--out signup__list-image-bg--10"
+              ></div>
+            </div>
+          </div>
+          <div class="signup__list-image--4 signup__list-image-common">
+            <div class="signup__list-image-container">
+              <div
+                class="signup__list-image-bg signup__list-image-bg--center signup__list-image-bg--11"
+              ></div>
+            </div>
+            <div class="signup__list-image-container">
+              <div
+                class="signup__list-image-bg signup__list-image-bg--center signup__list-image-bg--12"
+              ></div>
+            </div>
+            <div class="signup__list-image-container">
+              <div
+                class="signup__list-image-bg signup__list-image-bg--center signup__list-image-bg--13"
+              ></div>
+            </div>
+          </div>
+          <div class="signup__list-image--5 signup__list-image-common">
+            <div class="signup__list-image-container">
+              <div
+                class="signup__list-image-bg signup__list-image-bg--out signup__list-image-bg--14"
+              ></div>
+            </div>
+            <div class="signup__list-image-container">
+              <div
+                class="signup__list-image-bg signup__list-image-bg--out signup__list-image-bg--15"
+              ></div>
+            </div>
+            <div class="signup__list-image-container">
+              <div
+                class="signup__list-image-bg signup__list-image-bg--out signup__list-image-bg--16"
+              ></div>
+            </div>
+            <div class="signup__list-image-container">
+              <div
+                class="signup__list-image-bg signup__list-image-bg--out signup__list-image-bg--17"
+              ></div>
+            </div>
+          </div>
+          <div class="signup__list-image--6 signup__list-image-common">
+            <div class="signup__list-image-container">
+              <div
+                class="signup__list-image-bg signup__list-image-bg--outer signup__list-image-bg--18"
+              ></div>
+            </div>
+            <div class="signup__list-image-container">
+              <div
+                class="signup__list-image-bg signup__list-image-bg--outer signup__list-image-bg--19"
+              ></div>
+            </div>
+            <div class="signup__list-image-container">
+              <div
+                class="signup__list-image-bg signup__list-image-bg--outer signup__list-image-bg--20"
+              ></div>
+            </div>
+          </div>
+          <div class="signup__list-image--7 signup__list-image-common">
+            <div class="signup__list-image-container">
+              <div class="signup__list-image-bg signup__list-image-bg--21"></div>
+            </div>
+            <div class="signup__list-image-container">
+              <div class="signup__list-image-bg signup__list-image-bg--22"></div>
+            </div>
+            <div class="signup__list-image-container">
+              <div class="signup__list-image-bg signup__list-image-bg--23"></div>
+            </div>
+          </div>
+        </div>
+        <div class="signup__screen"></div>
+        <div class="u_position_absolute u_center_position" style="width: 100%; z-index: 4;">
+          <div class="signup">
+            <div class="signup__text-box">
+              <h4 class="signup__heading u_center_position">
+                <span class="signup__heading-span">Sign up to get your ideas</span>
+              </h1>
+            </div>
+    
+            <div class="signup__form">
+              <form action="#" class="signup__form-container">
+                <div class="sigup_form-logo">
+                  <svg height="40" viewBox="-3 -3 82 82" width="40" ><title>Pinterest logo</title><circle cx="38" cy="38" fill="white" r="40"></circle><path d="M27.5 71c3.3 1 6.7 1.6 10.3 1.6C57 72.6 72.6 57 72.6 37.8 72.6 18.6 57 3 37.8 3 18.6 3 3 18.6 3 37.8c0 14.8 9.3 27.5 22.4 32.5-.3-2.7-.6-7.2 0-10.3l4-17.2s-1-2-1-5.2c0-4.8 3-8.4 6.4-8.4 3 0 4.4 2.2 4.4 5 0 3-2 7.3-3 11.4C35.6 49 38 52 41.5 52c6.2 0 11-6.6 11-16 0-8.3-6-14-14.6-14-9.8 0-15.6 7.3-15.6 15 0 3 1 6 2.6 8 .3.2.3.5.2 1l-1 3.8c0 .6-.4.8-1 .4-4.4-2-7-8.3-7-13.4 0-11 7.8-21 22.8-21 12 0 21.3 8.6 21.3 20 0 12-7.4 21.6-18 21.6-3.4 0-6.7-1.8-7.8-4L32 61.7c-.8 3-3 7-4.5 9.4z" fill="#e60023" fill-rule="evenodd"></path></svg>
+                </div>
+                <div class="signup__form-text">
+                  <h1 class="signup__form-text--main">Welcome to Pinterest</h1>
+                  <p class="signup__form-text--sub">Find new ideas to try</p>
+                </div>
+  
+                <div class="form__group">
+                    <input type="email" class="form__input" placeholder="Email" id="email" required>
+                </div>
+  
+                <div class="form__group">
+                  <input type="password" class="form__input" placeholder="Create a password" id="password" required>
+                </div>
+  
+                <div class="form__group">
+                  <input type="number" class="form__input" placeholder="Age" id="age" required>
+                </div>
+  
+                <div class="form__btn">
+                  <a
+                    href="#"
+                    class="form__btn-container form__btn-container--1 btn--red-dark u_text_color_pink u_no_text_decoration"
+                  >
+                    Continue
+                  </a>
+                </div>
+  
+                <div style="font-weight: 700">OR</div>
+  
+                <div class="form__btn">
+                  <a
+                    href="#"
+                    class="form__btn-container form__btn-container--2 btn--blue u_text_color_pink u_no_text_decoration"
+                  >
+                    Continue with Facebook
+                  </a>
+                </div>
+                <div class="form__btn">
+                  <a
+                    href="#"
+                    class="form__btn-container form__btn-container--3 btn--pipe u_text_color_pink u_no_text_decoration"
+                  >
+                    Continue with Google
+                  </a>
+                </div>
+              </form>
+            </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+    </div>
+    
+  </body>
+
+  <script>
+    let contentIndex = 0;
+    showContents();
+
+    function currentContent(index) {
+      console.log("Hi")
+      contentIndex = index;
+      let i;
+      let contents = document.getElementsByClassName("myContents");
+      let radioBtns = document.getElementsByClassName("header__radio");
+
+      for (i = 0; i < contents.length; i++) {
+        contents[i].style.display = "none";
+      }
+      contentIndex++;
+      for (i = 0; i < radioBtns.length; i++) {
+        radioBtns[i].checked = false;
+      }
+      changeBtnColors(contentIndex - 1);
+
+      contents[contentIndex - 1].style.display = "block";
+      radioBtns[contentIndex - 1].checked = true
+      changeImageLists(index);
+    }
+
+    function showContents() {
+      let i;
+      let contents = document.getElementsByClassName("myContents");
+      let radioBtns = document.getElementsByClassName("header__radio");
+
+      for (i = 0; i < contents.length; i++) {
+        contents[i].style.display = "none";
+      }
+      contentIndex++;
+
+      if (contentIndex > contents.length) {
+        contentIndex = 1;
+      }
+      let index = contentIndex - 1;
+      for (i = 0; i < radioBtns.length; i++) {
+        radioBtns[i].checked = false;
+      }
+      changeBtnColors(index);
+
+      contents[index].style.display = "block";
+      radioBtns[index].checked = true;
+      changeImageLists(index);
+      setTimeout(showContents, 8000);
+    }
+
+    function changeBtnColors(index) {
+      let floatBtn = document.getElementById("flot");
+      if (index === 0) {
+        floatBtn.style.backgroundColor = "#e3780c";
+      } else if (index === 1) {
+        floatBtn.style.backgroundColor = "#0fa573";
+      } else if (index === 2) {
+        floatBtn.style.backgroundColor = "#0074e8";
+      } else if (index === 3) {
+        floatBtn.style.backgroundColor = "#0a6955";
+      }
+    }
+
+    function changeImageLists(index) {
+      let imageLists = document.getElementsByClassName(
+        "header__image-box-list"
+      );
+      for (let i = 0; i < imageLists.length; i++) {
+        imageLists[i].style.display = "none";
+      }
+      imageLists[index].style.display = "block";
+    }
+  </script>
+</html>

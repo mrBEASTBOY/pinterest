@@ -1,0 +1,121 @@
+.collect {
+  width: inherit;
+  height: inherit;
+  padding: 15rem 20rem;
+  display: flex;
+
+  &__text-box {
+    width: 50%;
+    padding: 19rem 12rem 0 13rem;
+
+    &-content {
+      text-align: center;
+      padding: 1rem 5rem;
+    }
+  }
+
+  &__button {
+    text-align: center;
+  }
+
+  &__list-image {
+    width: 50%;
+    position: relative;
+  }
+
+  &__bg {
+    position: absolute;
+
+    &--1 {
+      top: 0rem;
+      left: 0rem;
+    }
+
+    &--2 {
+      top: 0rem;
+      right: 10%;
+    }
+
+    &--3 {
+      top: 55%;
+      left: 70%;
+      transform: translate(-50%, -50%);
+    }
+
+    &--4 {
+      top: 85%;
+      left: 35%;
+      transform: translate(-50%, -50%);
+    }
+
+    &--5 {
+      top: 90%;
+      left: 70%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &__container {
+    background-size: cover;
+    color: $color-white;
+
+    &--1 {
+      background-image: url("../../img/BIG-LEFT-TOP.png");
+      width: 40rem;
+      height: 42rem;
+      padding-top: 10rem;
+    }
+
+    &--2 {
+      background-image: url("../../img/MEDIUM_RIGHT_TOP.png");
+      width: 22rem;
+      height: 23rem;
+      padding: 8rem 2rem 0 2rem;
+    }
+
+    &--3 {
+      background-image: url("../../img/SMALL_RIGHT_CENTER.png");
+      width: 16rem;
+      height: 17rem;
+      padding: 8rem 2rem 2rem 2rem;
+    }
+
+    &--4 {
+      background-image: url("../../img/CENTER_BOTTOM.png");
+      width: 22rem;
+      height: 23rem;
+      padding: 10rem 4rem 2rem 4rem;
+    }
+
+    &--5 {
+      background-image: url("../../img/MEIDUM_RIGHT_BOTTOM.png");
+      width: 22rem;
+      height: 23rem;
+      padding: 8rem 4rem 2rem 2.5rem;
+    }
+
+    &-list-bg {
+      display: flex;
+      justify-content: left;
+      gap: 0.5rem;
+      padding-left: 5rem;
+    }
+
+    &-single-bg {
+      width: 9rem;
+      height: 13rem;
+      background-size: cover;
+
+      &--1 {
+        background-image: url("../../img/small-1.png");
+      }
+
+      &--2 {
+        background-image: url("../../img/small-2.png");
+      }
+
+      &--3 {
+        background-image: url("../../img/small-3.png");
+      }
+    }
+  }
+}

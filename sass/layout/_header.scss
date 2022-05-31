@@ -1,0 +1,142 @@
+.header {
+  height: 100vh;
+  position: relative;
+  scroll-snap-align: start;
+
+  &__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -85%);
+  }
+
+  &__check-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__radio {
+    font-size: 1rem;
+    display: none;
+  }
+
+  &__radio-group {
+    display: inline-block;
+    padding: 3rem 0.75rem 0 0.75rem;
+  }
+
+  &__radio-label {
+    position: relative;
+  }
+
+  &__radio-button {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: -0.4rem;
+    background-color: $color-grey-medium;
+
+    &::after {
+      content: "";
+      height: 1rem;
+      width: 1rem;
+      display: block;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+  }
+
+  &__radio:checked ~ &__radio-label &__radio {
+    &--yellow:after {
+      opacity: 1;
+      background-color: $color-yellow;
+    }
+
+    &--dark-green:after {
+      opacity: 1;
+      background-color: $color-green-dark;
+    }
+
+    &--light-green:after {
+      opacity: 1;
+      background-color: $color-green-light;
+    }
+
+    &--blue:after {
+      opacity: 1;
+      background-color: $color-blue;
+    }
+  }
+
+  &__image-box {
+    width: 100%;
+    height: 100%;
+    &-flex {
+      display: flex;
+      width: 100%;
+      padding: 19rem 10rem 0 10rem;
+      height: 100%;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    &-container {
+      height: 100%;
+      width: 23.6rem;
+      transition: all 8s ease-in-out;
+    }
+
+    &-list {
+      overflow: hidden;
+      height: 100%;
+      width: 100%;
+    }
+
+    &-item {
+      width: 100%;
+      height: 50%;
+      background-size: cover;
+      border-radius: 1.3rem;
+
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  &__activity {
+    height: 6rem;
+    background-color: $color-yellow-light;
+    position: relative;
+    cursor: pointer;
+    margin-top: -6rem;
+
+    &-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-weight: 700;
+    }
+
+    &-blur {
+      background: linear-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgb(255, 255, 255) 70%
+      );
+      width: 100%;
+      height: 6rem;
+      position: absolute;
+      top: -6rem;
+      z-index: 1;
+    }
+  }
+}

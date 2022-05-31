@@ -1,0 +1,39 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: $default-font-size;
+  line-height: 1.7;
+}
+
+.heading-primary {
+  font-size: 6rem;
+  text-align: center;
+  line-height: 8rem;
+
+  &--1 {
+    color: $color-yellow;
+  }
+
+  &--2 {
+    color: $color-green-light;
+  }
+
+  &--3 {
+    color: $color-blue;
+  }
+
+  &--4 {
+    color: $color-green-dark;
+  }
+}
+.heading-secondary {
+  font-size: 2.4rem;
+}
+
+.heading-tertiary {
+  font-size: 2.8rem;
+}
+
+.heading-fourth {
+  font-size: 2rem;
+}
