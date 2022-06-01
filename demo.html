@@ -30,8 +30,8 @@
       }
 
       .holo {
-        width: 300px;
-        display: inline-block;
+        /* width: 300px;
+        display: inline-block; */
         width: 100%;
       }
 
@@ -41,10 +41,14 @@
     </style>
   </head>
   <body>
-    <div class="grid-container">
+    <div class="test">
+      <input type="text" id="imageLink" value="">
+      <button type="button" onclick="addImage()">Add</button>
+    </div>
+    <div class="grid-container" id="demo">
 
-        <div class="holo">
-          <img src="img/star1.jpg" alt="" style="max-width: 100%" />
+        <!-- <div class="holo">
+          <img src="https://i.pinimg.com/564x/a6/07/3a/a6073a9df02a76298bc1cb4b83ad2efd.jpg" alt="" style="max-width: 100%" />
         </div>
         <div class="holo">
           <img src="img/star8.jpg" alt="" style="max-width: 100%" />
@@ -84,8 +88,15 @@
         </div>
         <div class="holo">
           <img src="img/star14.jpg" alt="" style="max-width: 100%" />
-        </div>
+        </div> -->
       </div>
     </div>
   </body>
+
+  <script>
+    function addImage() {
+      inputValue = document.getElementById("imageLink").value
+      document.getElementById("demo").innerHTML += '<div class="holo"><img src="' + inputValue + '" alt="" style="max-width: 100%" /></div>'
+    }
+  </script>
 </html>
